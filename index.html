@@ -23,6 +23,7 @@
             <a href="#education">Education</a>
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
+            <span class="active-nav"></span>
         </nav>
     </header>
     <!--home-->
@@ -41,13 +42,14 @@
                 </div>
         </div>
         <div class="home-2">
-            <a href="#"><img src="html.png" alt=""></a>
-            <a href="#"><img src="css.png" alt=""></a>
+            <a href="#"><img src="boos.svg" alt="" style="background-color: aliceblue;"></a>
+            <a href="#"><img src="tail.svg" alt="" style="background-color: aquamarine;"></a>
             <a href="#"><img src="javas.png" alt=""></a>
-            <a href="#"><img src="react.svg" alt=""></a>
-            <a href="#"><img src="php.png" alt=""></a>
-            <a href="#"><img src="lara.png" alt=""></a>
-            <a href="#"><img src="git.png" alt=""></a>
+            <a href="#"><img src="react.svg" alt="" style="background-color: black;"></a>
+            <a href="#"><img src="php.png" alt="" style="background-color: black;"></a>
+            <a href="#"><img src="lara.svg" alt="" style="background-color: rgb(222, 59, 4);"></a>
+            <a href="#"><img src="git.png" alt="" class="git" style="background-color: black;"></a>
+            
         </div>
     </section>
        <!--  <div class="home-imghover"></div>  -->
@@ -198,12 +200,54 @@
      <footer class="footer">
         <div class="footer-text">
             <p>Copyright &copy; 2024 by John orland Ureta Sudoy | All Rights Reserved.</p>
-      
+        </div>
+           <div class="Smedia">
+            <a href="https://github.com/johnorland24/myfirstportfolio"><i class='bx bxl-github'></i></a>
+            <a href="https://www.facebook.com/johnorland.sudoy.1"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="https://www.instagram.com/mr_jorlan?igsh=bDhrOWpuenFpd3o2"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="https://m.me/johnorland.sudoy.1"><i class='bx bxl-messenger'></i></a>
+            <a href="https://www.linkedin.com/in/john-orland-sudoy-29b5882a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin-square'></i></a>
+           </div>
         <div class="footer-iconTop">
-            <a href="#"></a>
+            
+            <a href="#"><i class='bx bxs-hand-up'></i></a>
         </div>
         </div>
        </footer>
- <script src=""><i class='bx bxs-hand-up'></i></script>
+ <script>
+    let menuIcon = document.querySelector('#menu-icon');
+let navbar =document.querySelector('.navbar');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+}
+ /*let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
+
+window.onscroll = () => {}
+    section.forEach(sec => {
+       let top = window.scrollY;
+       let offset = sec.offsetTop -100;
+       let height = sec.offsetHeight;
+       let id = sec.getAttribute('id');
+    
+       if(top >= offset && top < offset + height) {
+        //active navbar links
+        navLinks.forEach(links => {
+            links.classList.remove('active');
+            document.querySelector('header nav a[href * =' + id + ']').classList.add('active');
+        
+        });
+      }
+});*/
+    //sticky
+    window.onscroll = () => {
+    let header = document.querySelector('header')
+
+    header.classList.toggle('sticky',window.scrollY > 100);
+}
+
+ </script>
 </body>
 </html>
