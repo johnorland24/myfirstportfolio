@@ -22,6 +22,7 @@ html{
 body{
     background: var(--bg-color);
     color:var(--text-color);
+    
 }
 header{
     position: fixed;
@@ -58,7 +59,7 @@ a img{
 .navbar a.active i{
     align-items: center;
     color: rgb(212, 212, 214);
-    font-size: 5rem;
+    font-size: 3rem;
     transition: .5s;
     
 }
@@ -73,8 +74,8 @@ a img{
     display: none;
 }
 section{
-    min-height: 115vh;
-    padding: 10rem 9% 2rem;
+    min-height: 100vh;
+    padding: 9rem 9% 2rem;
 }
 .home{
     display: flex;
@@ -133,7 +134,7 @@ btn-box{
     letter-spacing: .1rem;
     color: var(--bg-color);
     z-index: 1;
-    overflow: hidden;
+    overflow: auto;
 }
 .btn-box .btn::before {
     content:'';
@@ -158,6 +159,7 @@ btn-box{
     justify-content: space-between;
 }
  .home-2 a{
+    margin-right: 10px;
     position: relative;
     display: inline-flex;
     justify-content: center;
@@ -165,8 +167,8 @@ btn-box{
     width: 40px;
     height: 40px;
     background: transparent;
-    border: .2rem  solid var(--main-color);
-    border-radius: 50%;
+    border: none;
+    border-radius: none;
     color: var(--main-color);
  }
  /*   
@@ -193,8 +195,7 @@ btn-box{
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    padding-top: 10%;
-    padding-bottom:15%;
+    
  }
  .heading{
     font-size: 5rem;
@@ -254,7 +255,7 @@ btn-box{
     align-items: center;
     flex-direction: column;
     min-height: auto;
-    padding: 5rem;
+    padding: 10rem;
 }
  .education.education-row{
     display: flex;
@@ -322,7 +323,7 @@ btn-box{
 }
 .skills{
     min-height: auto;
-    padding-bottom: .10rem;
+    padding-bottom: 100%;
     background: var(--second-bg-color);
 
 }
@@ -378,7 +379,8 @@ btn-box{
 
 .contact{
     min-height: auto;
-    padding-bottom:7rem ;
+    padding-bottom: auto;
+   
 }
 .contact form{
     max-width: 70rem;
@@ -447,10 +449,9 @@ btn-box{
     cursor: pointer;
 }
 .footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 2rem 9%;
-    background: var(--second-bg-color);
+    max-width: 100%;
+    max-height: 100%;
+}
+.footer{
+    height: 10%px;
 }
