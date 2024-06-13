@@ -521,6 +521,7 @@ font-size: 55%;
 
 }
 .header{
+    background: var(--bg-color);
     padding:2rem 4%;
 }
 section{
