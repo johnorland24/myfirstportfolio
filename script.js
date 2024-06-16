@@ -1,10 +1,10 @@
 //scroll
-let menuIcon = document.querySelector('#menu-icon');
-let navbar =document.querySelector('.navbar');
+//let menuIcon = document.querySelector('#menu-icon');
+//let navbar =document.querySelector('.navbar');
 
-menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx,bx');
-}
+//menuIcon.onclick = () => {
+   // menuIcon.classList.toggle('bx,bx');
+//}
 /*let section = document.querySelector('section');
 let navLinks = document.querySelector('header nav a');*/
 
@@ -24,9 +24,9 @@ let navLinks = document.querySelector('header nav a');*/
        }
 });*/
     //sticky
-    window.onscroll = () => {
-    let header = document.querySelector('header')
+   // window.onscroll = () => {
+   // let header = document.querySelector('header')
 
-    header.classList.toggle('sticky',window.scrollY > 100);
-}
+   // header.classList.toggle('sticky',window.scrollY > 100);
+//}
 
